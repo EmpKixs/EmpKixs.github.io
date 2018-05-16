@@ -103,25 +103,25 @@
 
 
 
-  <meta name="description" content="详细搭建流程可参考以下博客： 使用Hexo+Github一步步搭建属于自己的博客（基础）:http://www.cnblogs.com/fengxiongZz/p/7707219.html">
-<meta name="keywords" content="Hexo,博客搭建">
+  <meta name="description" content="几种经典单例模式实现，参考:https://github.com/iluwatar/java-design-patterns 基础实现123456789101112public final class Singleton &amp;#123;    private static final Singleton INSTANCE = new Singleton();    private Singleton">
+<meta name="keywords" content="设计模式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo+GitHub搭建个人博客">
-<meta property="og:url" content="http://yoursite.com/2018/05/09/Hexo-GitHub搭建个人博客/index.html">
+<meta property="og:title" content="设计模式-单例模式">
+<meta property="og:url" content="http://yoursite.com/2018/05/16/设计模式-单例模式/index.html">
 <meta property="og:site_name" content="王兵的博客">
-<meta property="og:description" content="详细搭建流程可参考以下博客： 使用Hexo+Github一步步搭建属于自己的博客（基础）:http://www.cnblogs.com/fengxiongZz/p/7707219.html">
+<meta property="og:description" content="几种经典单例模式实现，参考:https://github.com/iluwatar/java-design-patterns 基础实现123456789101112public final class Singleton &amp;#123;    private static final Singleton INSTANCE = new Singleton();    private Singleton">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-09T14:35:13.079Z">
+<meta property="og:updated_time" content="2018-05-16T10:38:14.075Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo+GitHub搭建个人博客">
-<meta name="twitter:description" content="详细搭建流程可参考以下博客： 使用Hexo+Github一步步搭建属于自己的博客（基础）:http://www.cnblogs.com/fengxiongZz/p/7707219.html">
+<meta name="twitter:title" content="设计模式-单例模式">
+<meta name="twitter:description" content="几种经典单例模式实现，参考:https://github.com/iluwatar/java-design-patterns 基础实现123456789101112public final class Singleton &amp;#123;    private static final Singleton INSTANCE = new Singleton();    private Singleton">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/05/09/Hexo-GitHub搭建个人博客/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/05/16/设计模式-单例模式/"/>
 
 
 
@@ -131,7 +131,7 @@
   };
 </script>
 
-  <title>Hexo+GitHub搭建个人博客 | 王兵的博客</title>
+  <title>设计模式-单例模式 | 王兵的博客</title>
   
 
 
@@ -309,7 +309,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/09/Hexo-GitHub搭建个人博客/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/16/设计模式-单例模式/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Kixs">
@@ -326,7 +326,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo+GitHub搭建个人博客
+          <h1 class="post-title" itemprop="name headline">设计模式-单例模式
               
             
           </h1>
@@ -351,7 +351,7 @@
                 
               
 
-              <time title="创建时间：2018-05-09 10:05:22 / 修改时间：22:35:13" itemprop="dateCreated datePublished" datetime="2018-05-09T10:05:22+08:00">2018-05-09</time>
+              <time title="创建时间：2018-05-16 17:17:41 / 修改时间：18:38:14" itemprop="dateCreated datePublished" datetime="2018-05-16T17:17:41+08:00">2018-05-16</time>
             
 
             
@@ -373,7 +373,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/个人博客/" itemprop="url" rel="index"><span itemprop="name">个人博客</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/软件思维/" itemprop="url" rel="index"><span itemprop="name">软件思维</span></a></span>
 
                 
                 
@@ -401,7 +401,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">399</span>
+                <span title="本文字数">1.8k</span>
               
 
               
@@ -415,7 +415,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">1 分钟</span>
+                <span title="阅读时长">3 分钟</span>
               
             </div>
           
@@ -435,16 +435,11 @@
       
 
       
-        <h1 id="详细搭建流程可参考以下博客："><a href="#详细搭建流程可参考以下博客：" class="headerlink" title="详细搭建流程可参考以下博客："></a>详细搭建流程可参考以下博客：</h1><ul>
-<li>使用Hexo+Github一步步搭建属于自己的博客（基础）:<a href="http://www.cnblogs.com/fengxiongZz/p/7707219.html" target="_blank" rel="noopener">http://www.cnblogs.com/fengxiongZz/p/7707219.html</a><a id="more"></a></li>
-<li>使用Hexo+Github一步步搭建属于自己的博客（进阶）:<a href="http://www.cnblogs.com/fengxiongZz/p/7707568.html" target="_blank" rel="noopener">http://www.cnblogs.com/fengxiongZz/p/7707568.html</a></li>
-<li>使用 Hexo + Github 搭建自己的博客:<a href="https://jameszbl.github.io/2018/03/30/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/" target="_blank" rel="noopener">https://jameszbl.github.io/2018/03/30/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</a></li>
-</ul>
-<hr>
-<h1 id="样式定制"><a href="#样式定制" class="headerlink" title="样式定制"></a>样式定制</h1><ul>
-<li>hexo博客的背景设置：<a href="https://blog.csdn.net/com_ma/article/details/76039859" target="_blank" rel="noopener">https://blog.csdn.net/com_ma/article/details/76039859</a></li>
-</ul>
-
+        <p>几种经典单例模式实现，参考:<a href="https://github.com/iluwatar/java-design-patterns" target="_blank" rel="noopener">https://github.com/iluwatar/java-design-patterns</a></p>
+<h3 id="基础实现"><a href="#基础实现" class="headerlink" title="基础实现"></a>基础实现</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Singleton INSTANCE = <span class="keyword">new</span> Singleton();</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> INSTANCE;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="利用内部类实现"><a href="#利用内部类实现" class="headerlink" title="利用内部类实现"></a>利用内部类实现</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> SingletonHolder.INSTANCE;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">SingletonHolder</span> </span>&#123;</span><br><span class="line">        <span class="keyword">private</span> <span class="keyword">final</span> <span class="keyword">static</span> Singleton INSTANCE = <span class="keyword">new</span> Singleton();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="线程安全的懒加载实现"><a href="#线程安全的懒加载实现" class="headerlink" title="线程安全的懒加载实现"></a>线程安全的懒加载实现</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Singleton INSTANCE;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 避免通过反射方式再次初始化</span></span><br><span class="line">        <span class="keyword">if</span> (INSTANCE == <span class="keyword">null</span>) &#123;</span><br><span class="line">            INSTANCE = <span class="keyword">this</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> IllegalStateException(<span class="string">"Singleton already initialized!"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">synchronized</span> Singleton <span class="title">getInstance</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (INSTANCE == <span class="keyword">null</span>) &#123;</span><br><span class="line">            INSTANCE = <span class="keyword">new</span> Singleton();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> INSTANCE;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="线程安全的双重检查实现"><a href="#线程安全的双重检查实现" class="headerlink" title="线程安全的双重检查实现"></a>线程安全的双重检查实现</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">volatile</span> Singleton INSTANCE;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 避免通过反射方式再次初始化</span></span><br><span class="line">        <span class="keyword">if</span> (INSTANCE != <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> IllegalStateException(<span class="string">"Singleton already initialized!"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (INSTANCE == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">synchronized</span> (Singleton.class) &#123;</span><br><span class="line">                <span class="keyword">if</span> (INSTANCE == <span class="keyword">null</span>) &#123;</span><br><span class="line">                    INSTANCE = <span class="keyword">new</span> Singleton();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> INSTANCE;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -478,9 +473,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Hexo/" rel="tag"><i class="fa fa-tag"></i> Hexo</a>
-          
-            <a href="/tags/博客搭建/" rel="tag"><i class="fa fa-tag"></i> 博客搭建</a>
+            <a href="/tags/设计模式/" rel="tag"><i class="fa fa-tag"></i> 设计模式</a>
           
         </div>
       
@@ -493,15 +486,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/05/12/对Spring Ioc和AOP的理解/" rel="next" title="对Spring Ioc和AOP的理解">
+                <i class="fa fa-chevron-left"></i> 对Spring Ioc和AOP的理解
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/05/10/Hexo-博客搭建总结/" rel="prev" title="Hexo-博客搭建总结">
-                Hexo-博客搭建总结 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -674,7 +667,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#详细搭建流程可参考以下博客："><span class="nav-number">1.</span> <span class="nav-text">详细搭建流程可参考以下博客：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#样式定制"><span class="nav-number">2.</span> <span class="nav-text">样式定制</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#基础实现"><span class="nav-number">1.</span> <span class="nav-text">基础实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#利用内部类实现"><span class="nav-number">2.</span> <span class="nav-text">利用内部类实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#线程安全的懒加载实现"><span class="nav-number">3.</span> <span class="nav-text">线程安全的懒加载实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#线程安全的双重检查实现"><span class="nav-number">4.</span> <span class="nav-text">线程安全的双重检查实现</span></a></li></ol></div>
             
 
           </div>
